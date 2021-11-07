@@ -20,12 +20,12 @@ This is the most basic code to convert the data in the dictionary into a html ta
 
       data = ""
       for k in a:
-        data += "&lt;td>" + k + "&lt;/td>"
+        data += "<td>" + k + "</td>"
         for d in a[k]:
-          data += "&lt;td>" + d + "&lt;/td>"
+          data += "<td>" + d + "</td>"
         data += "&lt;tr>"
 
-      data = "&lt;table border=1>" + data + "&lt;table>"
+      data = "<table border=1>" + data + "&lt;table>"
       print(data)
       with open("file.html", "w") as file:
         file.write(data)
