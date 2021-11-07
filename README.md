@@ -23,7 +23,7 @@ This is the most basic code to convert the data in the dictionary into a html ta
         data += "<td>" + k + "</td>"
         for d in a[k]:
           data += "<td>" + d + "</td>"
-        data += "&lt;tr>"
+        data += "<tr>"
 
       data = "<table border=1>" + data + "&lt;table>"
       print(data)
